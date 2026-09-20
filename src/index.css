@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('./assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('./assets/fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+
+:root {
+    --primary-font: 'Jost', sans-serif;
+    --primary-color: goldenrod;
+}
+
+body {
+    padding: 0; 
+    margin: 0;
+    font-family: var(--primary-font);
+}

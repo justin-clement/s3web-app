@@ -1,0 +1,15 @@
+.header {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 3vh;
+    
+    background: linear-gradient(180deg, #ff4d4d, #eff755);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}

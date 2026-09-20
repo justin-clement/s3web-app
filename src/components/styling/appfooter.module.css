@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, var(--primary-color), #ff4d4d);
+}
+
+.footerLinks {
+    display: flex;
+    gap: 2rem;
+}
+
+.footerLinks p {
+    margin: 0;
+    cursor: pointer;
+}
