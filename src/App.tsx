@@ -9,6 +9,7 @@ const AboutS3 = lazy(() => import('./pages/AboutS3'))
 const Services = lazy(() => import('./pages/Services'))
 const ServiceDescription = lazy(() => import('./pages/ServiceDescription'))
 const GetInTouch = lazy(() => import('./pages/GetInTouch'))
+const SoftwareRequests = lazy(() => import('./pages/SoftwareRequests'))
 
 // ASSEMBLE PAGE COMPONENTS INTO THE ROUTER.
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutS3 /> }, 
       { path: 'services', element: <Services />}, 
       { path: 'services/:serviceName', element: <ServiceDescription /> }, 
+      { path: 'requests', element: <SoftwareRequests /> },
       { path: 'contact', element: <GetInTouch /> }
     ]
   }

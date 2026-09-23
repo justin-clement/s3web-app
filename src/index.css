@@ -1,18 +1,12 @@
 @font-face {
-    font-family: 'Jost';
-    src: url('./assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Google Sans Flex';
+    src: url('./assets/fonts/GoogleSansFlex.ttf') format('truetype');
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url('./assets/fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype');
-    font-style: italic;
 }
 
 
 :root {
-    --primary-font: 'Jost', sans-serif;
+    --primary-font: 'Google Sans Flex', sans-serif;
     --primary-color: goldenrod;
 }
 
@@ -20,4 +14,23 @@ body {
     padding: 0; 
     margin: 0;
     font-family: var(--primary-font);
+}
+
+button {
+    font-family: var(--primary-font);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-family: var(--primary-font);
+    border: none;
+    outline: 1px solid grey;
+    transition: outline 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid var(--primary-color);
 }

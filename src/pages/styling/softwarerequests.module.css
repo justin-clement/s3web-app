@@ -1,0 +1,50 @@
+.pageContainer {
+    padding: 10px;
+    
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageContainer h1 {
+    color: brown;
+    margin-top: 0;
+}
+
+.requestArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+}
+
+.requestArea p {
+    text-align: center;
+    color: grey;
+}
+
+.requestForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.requestButton {
+    background-color: green;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.requestButton:hover {
+    background-color: darkgreen;
+}
+
+input[type="email"] {
+    width: 20vw;
+}
+
+label {
+    font-weight: bold;
+    color: brown;
+}
