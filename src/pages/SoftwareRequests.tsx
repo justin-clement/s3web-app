@@ -67,8 +67,9 @@ function SoftwareRequests() {
             <BackArrow size={30} colour="brown" />
 
             <div className={styles.contentContainer}>
+                
                 <h1>Make a Request</h1>
-
+                
                 <div className={styles.requestArea}>
                     <p>You can request for the development of custom software tailored to your 
                         personal or business needs, whether it's a simple portfolio website, a 
@@ -97,7 +98,8 @@ function SoftwareRequests() {
                         </label>
                         <br />
 
-                        <label>Explain what you require in clear and complete detail. <br /> 
+                        <label>Explain what you require in clear and complete detail. 
+                            Include everything the software should be able to do. <br /> 
                             <textarea 
                             rows={10}
                             cols={70}

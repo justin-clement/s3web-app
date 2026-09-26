@@ -1,0 +1,14 @@
+.pageContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pageContainer h2 {
+    text-align: center;
+}
+
+.servicesSection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
