@@ -1,15 +1,28 @@
 .header {
-    color: var(--primary-color);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 76px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background: transparent;
+}
+
+.headerOverlay {
+    position: absolute;
+    inset: 0 0 auto;
+    background: transparent;
 }
 
 .header h1 {
     margin: 0;
-    padding: 3vh;
-    
-    background: linear-gradient(180deg, #ff4d4d, #eff755);
+    padding: 8px 16px;
+    background: var(--brand-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 2rem;
+    line-height: 1;
     -webkit-text-fill-color: transparent;
 }

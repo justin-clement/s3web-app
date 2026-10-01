@@ -10,7 +10,7 @@ function ServiceIntroCard({ serviceInfo }: { serviceInfo: ServiceProps }) {
 
     // FUNCTION TO OPEN FULLER DESCRIPTION OF SERVICE.
     const viewService = () => {
-        navigate(`/solutions/${serviceInfo.nameAsString}`, { state: { service: serviceInfo.nameAsString } });
+        navigate(`/services/${serviceInfo.nameAsString}`);
     };
 
     // CARD ANIMATION PROPERTIES.
@@ -21,7 +21,7 @@ function ServiceIntroCard({ serviceInfo }: { serviceInfo: ServiceProps }) {
 
 
     return (
-        <motion.div key={serviceInfo.nameAsString} variants={cardVariants} className={styles.card}>
+        <motion.div variants={cardVariants} className={styles.card}>
             {serviceInfo.name}
             <p>{serviceInfo.summary}</p>
             <br />

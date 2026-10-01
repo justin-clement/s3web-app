@@ -1,49 +1,155 @@
 .pageContainer {
-    padding: 10px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px 24px 64px;
+    color: #303632;
 }
 
-.contentContainer {
+.pageHeader {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e4e6e1;
 }
 
-.pageContainer h1 {
-    color: brown;
-    margin-top: 0;
+.pageHeader h1 {
+    margin: 0;
+    color: #303632;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.backButton {
+    display: flex;
+    color: var(--primary-color);
 }
 
 .requestArea {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10vw;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: start;
+    gap: 48px;
 }
 
-.requestArea p {
-    text-align: center;
-    color: grey;
+.requestIntro {
+    max-width: 44ch;
+    color: #606862;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.requestIntro p {
+    margin: 0 0 16px;
 }
 
 .requestForm {
     display: flex;
     flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid #e4e1d8;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 6px;
+    background: #fbfaf7;
+}
+
+.requestForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #343b36;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.requestForm label span {
+    display: inline;
+    color: #747b75;
+    font-weight: 400;
+}
+
+.requestForm select,
+.requestForm textarea,
+.requestForm input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #cfd4cf;
+    border-radius: 4px;
+    outline: none;
+    background: #fff;
+    color: #303632;
+    font-size: 1rem;
+}
+
+.requestForm select,
+.requestForm input {
+    min-height: 44px;
+}
+
+.requestForm textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.requestForm select:focus,
+.requestForm textarea:focus,
+.requestForm input:focus {
+    border-color: var(--primary-color);
+    outline: 2px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+.requestForm input::placeholder,
+.requestForm textarea::placeholder {
+    color: #8b928c;
 }
 
 .requestButton {
-    background-color: green;
-    color: white;
-    transition: background-color 0.3s;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #267456;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
 }
 
 .requestButton:hover {
-    background-color: darkgreen;
+    background: #1d6046;
 }
 
-input[type="email"] {
-    width: 20vw;
+.requestButton:focus-visible {
+    outline: 3px solid rgb(38 116 86 / 35%);
+    outline-offset: 2px;
 }
 
-label {
-    font-weight: bold;
-    color: brown;
+@media (max-width: 720px) {
+    .pageContainer {
+        padding: 12px 18px 40px;
+    }
+
+    .pageHeader {
+        margin-bottom: 22px;
+    }
+
+    .pageHeader h1 {
+        font-size: 1.65rem;
+    }
+
+    .requestArea {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .requestIntro {
+        max-width: none;
+    }
+
+    .requestForm {
+        padding: 18px;
+    }
 }

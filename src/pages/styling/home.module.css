@@ -1,0 +1,230 @@
+.homePage {
+	--home-ink: #303632;
+	--home-muted: #606862;
+	--home-green: #267456;
+	--home-gold: var(--primary-color);
+}
+
+.landingSection {
+	display: flex;
+	min-height: min(760px, 84svh);
+	align-items: center;
+	box-sizing: border-box;
+	padding: 100px 8vw 72px;
+	background-position: center 55%;
+	background-size: cover;
+	color: #fff;
+}
+
+.heroContent {
+	width: min(100%, 720px);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.heroEyebrow,
+.sectionLabel {
+	margin: 0 0 16px;
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.heroEyebrow {
+	color: var(--home-gold);
+}
+
+.heroContent h1 {
+	max-width: 680px;
+	margin: 0 auto;
+	font-size: 4.5rem;
+	font-weight: 600;
+	line-height: 1.02;
+}
+
+.heroCopy {
+	max-width: 500px;
+	margin: 20px auto 0;
+	color: rgb(255 255 255 / 90%);
+	font-size: 1.25rem;
+	line-height: 1.55;
+}
+
+.midSection {
+	padding: 76px 24px 84px;
+	background: #fff;
+}
+
+.sectionInner,
+.highlightInner,
+.moreInner {
+	display: grid;
+	max-width: 1080px;
+	grid-template-columns: minmax(170px, 0.65fr) minmax(0, 1.35fr);
+	gap: 64px;
+	align-items: start;
+	margin: 0 auto;
+}
+
+.sectionLabel {
+	color: #8a6416;
+}
+
+.sectionCopy h2,
+.highlightCopy h2,
+.moreCopy h2 {
+	margin: 0 0 16px;
+	color: var(--home-ink);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.sectionCopy > p,
+.highlightCopy > p:not(.sectionLabel),
+.moreCopy > p:not(.sectionLabel) {
+	max-width: 66ch;
+	margin: 0 0 24px;
+	color: var(--home-muted);
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.primaryButton,
+.secondaryButton {
+	display: inline-flex;
+	min-height: 44px;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px 18px;
+	border-radius: 4px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.primaryButton {
+	background: var(--home-green);
+	color: #fff;
+}
+
+.primaryButton:hover {
+	background: #1d6046;
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+	outline: 3px solid rgb(38 116 86 / 35%);
+	outline-offset: 3px;
+}
+
+.highlightedServiceSection {
+	padding: 76px 24px;
+	background: #eef1eb;
+}
+
+.highlightInner {
+	grid-template-areas: "copy visual";
+	grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+	align-items: center;
+}
+
+.highlightCopy {
+	grid-area: copy;
+}
+
+.highlightVisual {
+	grid-area: visual;
+	display: grid;
+	min-height: 230px;
+	place-items: center;
+	padding: 24px;
+	background: #fff;
+}
+
+.highlightVisual img {
+	display: block;
+	width: min(100%, 380px);
+	height: auto;
+	object-fit: contain;
+}
+
+.moreOnUs {
+	padding: 76px 24px 84px;
+	background: #263f34;
+	color: #fff;
+}
+
+.moreInner {
+	align-items: start;
+}
+
+.moreOnUs .sectionLabel {
+	color: var(--home-gold);
+}
+
+.moreCopy h2 {
+	color: #fff;
+}
+
+.moreCopy > p:not(.sectionLabel) {
+	color: #d7e0da;
+}
+
+.secondaryButton {
+	border: 1px solid rgb(255 255 255 / 55%);
+	background: transparent;
+	color: #fff;
+}
+
+.secondaryButton:hover {
+	border-color: #fff;
+	background: rgb(255 255 255 / 10%);
+}
+
+@media (max-width: 720px) {
+	.landingSection {
+		min-height: 620px;
+		min-height: min(720px, 84svh);
+		padding: 110px 24px 64px;
+		background-position: 58% center;
+	}
+
+	.heroContent h1 {
+		font-size: 3rem;
+	}
+
+	.heroCopy {
+		font-size: 1.1rem;
+	}
+
+	.midSection,
+	.highlightedServiceSection,
+	.moreOnUs {
+		padding: 52px 22px 58px;
+	}
+
+	.sectionInner,
+	.moreInner {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.highlightInner {
+		grid-template-areas:
+			"visual"
+			"copy";
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.sectionCopy h2,
+	.highlightCopy h2,
+	.moreCopy h2 {
+		font-size: 1.7rem;
+	}
+
+	.highlightVisual {
+		min-height: 190px;
+	}
+}

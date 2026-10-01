@@ -64,64 +64,57 @@ function SoftwareRequests() {
         transition={{ duration: 0.2 }}
         className={styles.pageContainer}>
 
-            <BackArrow size={30} colour="brown" />
+            <div className={styles.pageHeader}>
+                <div className={styles.backButton}><BackArrow size={28} colour="currentColor" /></div>
+                <h1>Make a Request</h1>
+            </div>
 
             <div className={styles.contentContainer}>
-                
-                <h1>Make a Request</h1>
-                
                 <div className={styles.requestArea}>
-                    <p>You can request for the development of custom software tailored to your 
-                        personal or business needs, whether it's a simple portfolio website, a 
-                        multi-tenant web application, an in-house software system or a backend service 
-                        running on the cloud. 
-                        Kindly specify your exact needs and what the software should be able to do, 
-                        then place your request. We'll get in 
-                        touch with you soon after with a detailed response to your request, 
-                        including feasibility, cost, time to build, technological and design choices. 
-                        At the moment, we do not specialize in mobile app development, though we're 
-                        currently experimenting with Progressive Web Applications (PWAs).
-                    </p>
+                    <div className={styles.requestIntro}>
+                        <p>Tell us what you need, who it is for, and what it should do. We take on projects ranging from portfolio websites and custom web applications to internal tools and cloud-based backend services.</p>
+                        <p>After reviewing your request, we’ll get back to you with an assessment of feasibility, likely cost and timeline, and our recommended approach.</p>
+                        <p>We currently focus on web and desktop software rather than native mobile apps.</p>
+                    </div>
 
                     <div className={styles.requestForm}>
-                    
-                        <label>What kind of service do you want? <br />
+
+                        <label>What kind of service do you need?
                             <select name="service_type" value={requestForm.service_type} onChange={handleChange}>
-                                <option value="">--- Select a service type --- </option>
-                                <option value="Web App">Full Web Service (website or other web application)</option>
-                                <option value="Backend">Backend Design (logic for an application)</option>
-                                <option value="Frontend">Frontend Web Interface (visual aspect of website)</option>
-                                <option value="Desktop App">Desktop Application (installable software for Windows or Mac)</option>
-                                <option value="Cloud">Cloud Hosting (run or deploy a service on the cloud)</option>
+                                <option value="">Select a service type</option>
+                                <option value="Web App">Web Application or Website</option>
+                                <option value="Backend">Backend Design</option>
+                                <option value="Frontend">Frontend Design</option>
+                                <option value="Desktop App">Desktop Application</option>
+                                <option value="Cloud">Cloud Services</option>
+                                <option value="Hosting">Hosting</option>
                                 <option value="Other">Other</option>
                             </select>
                         </label>
-                        <br />
 
-                        <label>Explain what you require in clear and complete detail. 
-                            Include everything the software should be able to do. <br /> 
+                        <label>Requirements
                             <textarea 
-                            rows={10}
-                            cols={70}
+                            rows={8}
                             name="requirements" 
                             value={requestForm.requirements} 
-                            onChange={handleChange}></textarea>
+                            onChange={handleChange}
+                            placeholder="Describe the problem, who will use the software, and the features you need."
+                            ></textarea>
                         </label>
-                        <br />
 
-                        <label>You may include a budget <br />
+                        <label>Budget <span>(optional)</span>
                             <input name="budget" value={requestForm.budget} onChange={handleChange} />
                         </label>
-                        <br />
 
-                        <label>Email we can reach you <br />
+                        <label>Email address
                             <input 
                             name="email" 
                             value={requestForm.email} 
                             type="email" 
-                            onChange={handleChange} required />
+                            onChange={handleChange}
+                            placeholder="you@example.com"
+                            required />
                         </label>
-                        <br />
 
                         <button 
                         className={styles.requestButton}

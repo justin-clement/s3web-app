@@ -2,6 +2,7 @@ import styles from "./styling/services.module.css";
 import ServiceIntroCard from "../components/ServiceIntroCard";
 import { allServices } from "../appData/appData";
 import { motion } from "framer-motion";
+import { BackArrow } from "../components/Icons";
 
 function Services() {
 
@@ -19,14 +20,19 @@ function Services() {
 
     return (
         <div className={styles.pageContainer}>
-            <h2>Solutions & Services</h2>
+            <header className={styles.pageHeader}>
+                <BackArrow size={28} colour="var(--primary-color)" />
+                <div>
+                    <p className={styles.eyebrow}>WHAT WE BUILD</p>
+                    <h1>Solutions &amp; Services</h1>
+                </div>
+            </header>
 
             <motion.p 
+            className={styles.intro}
             initial={{ y: 20, opacity: 0 }} 
             animate={{ y: 0, opacity: 1 }}>
-                Our services are made for a couple of things: solve specific problems, 
-                introduce innovative applications of technology but most important, they are designed to make     
-                life and living easier, more effective, and also more interesting.
+                We build practical software that solves real problems. Each service applies technology with care to make everyday work simpler, more effective, and more interesting.
             </motion.p>
 
             <motion.div 
@@ -35,7 +41,7 @@ function Services() {
             initial="hidden" 
             animate="visible">
                 { allServices.map((service) => (
-                    <ServiceIntroCard serviceInfo={service} />
+                    <ServiceIntroCard key={service.nameAsString} serviceInfo={service} />
                 )) }
             </motion.div>
         </div>

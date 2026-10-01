@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import AppHeader from "../components/AppHeader";
 import AppFooter from "../components/AppFooter";
 import styles from "./styling/rootlayout.module.css";
@@ -6,11 +6,13 @@ import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 
 function RootLayout() {
+    const location = useLocation();
+    const isHome = location.pathname === "/";
 
     return (
         <div className={styles.layout}>
             <ScrollToTop />
-            <AppHeader />
+            <AppHeader overlay={isHome} />
 
             <main className={styles.pageContent}>
                 <AnimatePresence>

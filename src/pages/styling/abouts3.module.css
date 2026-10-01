@@ -1,69 +1,154 @@
 .pageContainer {
-    padding: 10px;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 24px 48px;
+    color: #303632;
+}
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e4e6e1;
+}
+
+.pageTitle {
+    margin: 0;
+    color: #303632;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .aboutText {
-    color: grey;
+    max-width: 76ch;
+    margin: 0 auto 32px;
+    color: #606862;
     text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .attributesContainer {
-    display: flex;
-    gap: 5vw;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
 }
 
 .innovateDiv, .scalableDiv, .simpleDiv, .solutionsDiv {
-    width: 35%;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 16%);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.innovateDiv h2, .scalableDiv h2, .simpleDiv h2, .solutionsDiv h2 {
+    margin: 12px 0 8px;
+}
+
+.innovateDiv p, .scalableDiv p, .simpleDiv p, .solutionsDiv p {
+    margin: 0;
+    line-height: 1.65;
 }
 
 .solutionsDiv {
-    background-color: lightgreen;
-    color: green;
+    background-image: url("../../assets/images/green_fabric.jpg");
 }
 
 .innovateDiv {
-    background-color: rgb(255, 206, 83);
-    color: brown;
+    background-image: url("../../assets/images/yellow_fabric.jpg");
 }
 
 .simpleDiv {
-    background-color: pink;
-    color: darkred;
+    background-image: url("../../assets/images/pink_fabric.jpg");
 }
 
 .scalableDiv {
-    background-color: lightskyblue;
-    color: navy;
+    background-image: url("../../assets/images/blue_fabric.jpg");
 }
 
 .checkOutDiv {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: black;
-    border-radius: 15px;
+    gap: 24px;
+    margin-top: 36px;
+    padding: 20px 28px;
+    border-radius: 6px;
+    background-color: #263f34;
 }
 
 .checkOutDiv p {
-    font-size: 1.5rem;
-    color: white;
+    margin: 0;
+    color: #fff;
+    font-size: 1.25rem;
 }
 
 .checkOutDiv button {
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
+    min-height: 44px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    background-color: #267456;
+    color: #fff;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.checkOutDiv button:hover {
+    background-color: #1d6046;
+}
+
+@media (max-width: 720px) {
+    .pageContainer {
+        padding: 12px 18px 36px;
+    }
+
+    .pageHeader {
+        margin-bottom: 16px;
+    }
+
+    .pageTitle {
+        font-size: 1.65rem;
+    }
+
+    .aboutText {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    .attributesContainer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .innovateDiv, .scalableDiv, .simpleDiv, .solutionsDiv {
+        max-width: 560px;
+        justify-self: center;
+        padding: 22px 18px;
+    }
+
+    .checkOutDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 24px;
+        padding: 20px;
+    }
+
+    .checkOutDiv p {
+        font-size: 1.1rem;
+    }
 }

@@ -8,6 +8,7 @@
 :root {
     --primary-font: 'Google Sans Flex', sans-serif;
     --primary-color: goldenrod;
+    --brand-gradient: linear-gradient(90deg, var(--primary-color), #ff4d4d);
 }
 
 body {

@@ -1,0 +1,159 @@
+.pageContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 24px 44px;
+    color: #303632;
+}
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e4e6e1;
+}
+
+.pageHeader p {
+    margin: 0;
+    color: #606862;
+    font-size: 0.9rem;
+}
+
+.detailLayout {
+    display: grid;
+    grid-template-areas:
+        "description visual"
+        "button button";
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    column-gap: 64px;
+    row-gap: 28px;
+    align-items: center;
+}
+
+.descriptionColumn {
+    grid-area: description;
+    max-width: 620px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.descriptionColumn h1 {
+    margin: 0 0 20px;
+    color: #303632;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.descriptionText {
+    color: #606862;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.descriptionText p {
+    margin: 0 0 16px;
+}
+
+.serviceIdentity {
+    grid-area: visual;
+    display: flex;
+    min-height: 260px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 32px;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 4px;
+    background: #f2f3ef;
+    text-align: center;
+}
+
+.serviceLogo {
+    display: flex;
+    width: 100%;
+    min-height: 96px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.serviceLogo img {
+    display: block;
+    width: min(100%, 320px);
+    max-height: 160px;
+    object-fit: contain;
+}
+
+.serviceLogo p {
+    margin: 0;
+    color: #303632;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.serviceIdentity > p {
+    max-width: 38ch;
+    margin: 0;
+    color: #606862;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.detailButton {
+    grid-area: button;
+    justify-self: start;
+    min-height: 44px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    background: #e5e8e4;
+    color: #737b74;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+.notFound {
+    padding: 36px 0;
+}
+
+.notFound h1 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+}
+
+.notFound p {
+    color: #606862;
+}
+
+@media (max-width: 720px) {
+    .pageContainer {
+        padding: 12px 18px 36px;
+    }
+
+    .detailLayout {
+        grid-template-areas:
+            "visual"
+            "description"
+            "button";
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .descriptionColumn h1,
+    .notFound h1 {
+        font-size: 1.7rem;
+    }
+
+    .serviceIdentity {
+        min-height: 220px;
+        padding: 24px;
+    }
+
+}
