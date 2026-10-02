@@ -44,9 +44,10 @@ function AboutS3() {
             </div>
             
 
-            <p className={styles.aboutText}>We build digital solutions for the problems of the modern world. 
-                We believe software should make life better, work effectively, and be built to a high standard. 
-                Our approach to engineering and design is shaped by a few principles that guide everything we build.
+            <p className={styles.aboutText}> 
+                <b>Supernova Software Services</b> (S3) is a digital services enterprise, 
+                dedicated to the availability of useful software. Our approach to engineering and 
+                design is shaped by a few principles that guide everything we build.
             </p>
 
             <motion.div
@@ -62,11 +63,12 @@ function AboutS3() {
                 >
                     <div className="iconDiv"><SolutionsIcon size={40} /></div>
                     
-                    <h2>Solutions.</h2>
-                    <p>Each of our services is built to solve specific problems. 
-                        One of our favourite ways to build is identifying a real issue in a particular 
-                        field and developing an effective solution for it. S3 is a solutions-driven enterprise, 
-                        and our products reflect that approach. We focus on what needs to be solved, 
+                    <h2>Solution-oriented.</h2>
+                    <p>Most of our services address specific problems. 
+                        One of our favourite ways to build is by first identifying real issues in a particular 
+                        field, then developing an effective fix for it, making many of our services solutions-based 
+                        by default. S3 is a problem-solving enterprise, 
+                        and our products reflect this approach. We focus on what needs to be solved, 
                         then build what is needed to solve it.
                     </p>
                 </motion.div>
@@ -77,13 +79,13 @@ function AboutS3() {
                 >
                     <div className="iconDiv"><InnovateIcon size={40} /></div>
                     
-                    <h2>Innovation.</h2>
+                    <h2>Innovation & Intelligence.</h2>
                     <p>We aren't afraid to try new things. Creating something new comes with uncertainty. 
-                        You cannot always know how a product will be received, how widely it will be 
+                        You cannot always know how a product or service will be received, how widely it will be 
                         adopted, or how well it will perform in the real world. But when we believe in an 
-                        idea, we stay with it. We refine it, test it, and keep working until it has 
+                        idea, we stay with it. We refine, test it, and keep working until it's 
                         come to life. We believe good and innovative products should ultimately speak 
-                        for themselves.
+                        for themselves, and we are always looking to build more ways to achieve things smartly.
                     </p>
                 </motion.div>
 
@@ -93,11 +95,11 @@ function AboutS3() {
                 >
                     <div className="iconDiv"><SimpleIcon size={40} /></div>
                     
-                    <h2>Simplicity.</h2>
+                    <h2>Ease of Use.</h2>
                     <p>The shortest path between an idea and execution is often the simplest one. 
                         Why make something complicated when the same result can be achieved more simply? At S3, 
                         ease of use is a priority in everything we design. When building software, our first goal 
-                        is effectiveness: let it work. Then, make that working solution easy to use. We deliberately 
+                        is effectiveness: let it work. Then, make that working solution easy to get a hang of. We deliberately 
                         look for the simplest way to give people access to the results they need, without adding 
                         more than is necessary.
                     </p>
@@ -108,10 +110,12 @@ function AboutS3() {
                     variants={attributeCardVariants}
                 >
                     <ScalabilityIcon size={40} />
-                    <h2>Scalability.</h2>
+                    <h2>Scalability & Security.</h2>
                     <p>Our services are built for real-world use. They are designed to support multiple users, 
                         handle heavy workloads, and remain reliable as demand grows. Whether a service is being 
-                        used by a few people or many at once, we build with performance and scalability in mind.</p>
+                        used by a few people or many at once, we build with performance, scalability, and security in mind. 
+                        We set up secure infrastructure to handle the movement of data, and follow 
+                        industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside.</p>
                 </motion.div>
 
             </motion.div>

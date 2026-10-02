@@ -72,7 +72,9 @@ function SoftwareRequests() {
             <div className={styles.contentContainer}>
                 <div className={styles.requestArea}>
                     <div className={styles.requestIntro}>
-                        <p>Tell us what you need, who it is for, and what it should do. We take on projects ranging from portfolio websites and custom web applications to internal tools and cloud-based backend services.</p>
+                        <p>Tell us what you need, who it is for, and what it should do. We take on requests ranging 
+                            from portfolio websites and custom web applications to internal tools and cloud-based backend 
+                            services.</p>
                         <p>After reviewing your request, we’ll get back to you with an assessment of feasibility, likely cost and timeline, and our recommended approach.</p>
                         <p>We currently focus on web and desktop software rather than native mobile apps.</p>
                     </div>
@@ -98,7 +100,7 @@ function SoftwareRequests() {
                             name="requirements" 
                             value={requestForm.requirements} 
                             onChange={handleChange}
-                            placeholder="Describe the problem, who will use the software, and the features you need."
+                            placeholder="Describe what you want, any problem(s) this is to solve, who will use the software, what features you need."
                             ></textarea>
                         </label>
 

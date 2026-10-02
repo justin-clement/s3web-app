@@ -22,7 +22,7 @@ function GetInTouch() {
             <section className={styles.contactBlock} aria-labelledby="contact-heading">
                 <p className={styles.eyebrow}>CONTACT S3</p>
                 <h2 id="contact-heading">You can talk with us.</h2>
-                <p className={styles.contactText}>For questions, project enquiries, or just to say hello, send us an email.</p>
+                <p className={styles.contactText}>For questions, enquiries, or just to say hello, send us an email.</p>
                 <a className={styles.emailLink} href="mailto:hi.supernova@outlook.com">
                     hi.supernova@outlook.com
                 </a>
