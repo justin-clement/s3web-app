@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styling/softwarerequests.module.css"
-import server from "../api";
+import { createRequest } from "../appData/appFunctions";
 import PopupText from "../components/PopupText";
 import { AnimatePresence, motion } from "framer-motion";
 import { BackArrow } from "../components/Icons";
@@ -17,6 +17,7 @@ function SoftwareRequests() {
 
     const [requestSuccess, setRequestSuccess] = useState(false);
     const [displayMessage, setDisplayMessage] = useState("");
+    const [isSending, setIsSending] = useState(false);
 
     // FUNCTION FOR PUTTING IN VALUES IN THE FORM.
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -39,20 +40,27 @@ function SoftwareRequests() {
             return;
         };
 
+        const email = requestForm.email.trim();
+        if (
+            email.length > 254 ||
+            !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)
+        ) {
+            setDisplayMessage("Enter a valid email address.");
+            setTimeout(() => { setDisplayMessage("") }, 2000);
+            return;
+        }
+
+        setIsSending(true);
         try {
-            const { data } = await server.post("/requests", requestForm);
-            if (data.status) {
-                setRequestForm({ service_type: "", requirements: "", budget: "", email: "" });
-                setDisplayMessage("We've received your request and we'll contact you after reviewing it.");
-                setRequestSuccess(true);
-                return;
-            } else {
-                setDisplayMessage(data.message);
-                return;
-            };
+            await createRequest({ ...requestForm, email });
+            setRequestForm({ service_type: "", requirements: "", budget: "", email: "" });
+            setDisplayMessage("We've received your request and we'll contact you after reviewing it.");
+            setRequestSuccess(true);
         } catch {
             setDisplayMessage("An error occurred sending your request. Kindly try again.");
             setTimeout(() => { setDisplayMessage("") }, 2000);
+        } finally {
+            setIsSending(false);
         };
     };
 
@@ -120,7 +128,8 @@ function SoftwareRequests() {
 
                         <button 
                         className={styles.requestButton}
-                        onClick={sendRequest}>Place Request</button>
+                        onClick={sendRequest}
+                        disabled={isSending}>{isSending ? "Sending..." : "Place Request"}</button>
 
                         <div style={{ textAlign: "center" }}>
                             <AnimatePresence>
