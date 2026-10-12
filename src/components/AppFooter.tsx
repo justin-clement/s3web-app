@@ -20,7 +20,7 @@ function AppFooter(){
                 <p onClick={openContact}>Get in Touch</p>
             </div>
             
-            <p>&copy; {new Date().getFullYear()} Supernova Software Services.</p>
+            <p className={styles.copyright}>&copy; {new Date().getFullYear()} Supernova Software Services.</p>
         </div>
     )
 };

@@ -8,6 +8,7 @@ function ServiceDescription() {
 
     const { serviceName } = useParams();
     const serviceDetails = allServices.find((service) => service.nameAsString === serviceName);
+    const serviceFunction = serviceDetails?.action ? serviceDetails.action : () => {};
 
     return (
         <motion.main 
@@ -35,8 +36,11 @@ function ServiceDescription() {
                         <p>{serviceDetails.summary}</p>
                     </aside>
 
-                    <button className={styles.detailButton} type="button" disabled>
-                        More details coming soon
+                    <button 
+                    onClick={serviceFunction}
+                    className={styles.detailButton} 
+                    type="button">
+                        { serviceDetails.action ? 'Explore This Service' : 'Coming Soon' }
                     </button>
                 </section>
             ) : (

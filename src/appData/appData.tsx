@@ -5,19 +5,25 @@ export type ServiceProps = {
     name: string | ReactNode
     nameAsString: string
     summary: string
-    description: string | ReactNode    
+    description: string | ReactNode 
+    action?: () => void   
 }
 
 // ALL SERVICES AND DESCRIPTIONS.
 export const trueHealthProps: ServiceProps = {
     name: <img src={trueHealthLogo} alt="TrueHealth" />, 
     nameAsString: "TrueHealth", 
-    summary: "A powerful healthcare data management system, built for hospitals, individuals and HMOs.", 
+    summary: "A powerful healthcare data management system connecting hospitals, individuals and HMOs.", 
     description: 
         <>
-            <p>TrueHealth is a healthcare data management system designed for hospitals, individuals, and HMOs. It brings these different participants into one product focused on organizing and working with health information.</p>
-            <p>By making health data management its focus, TrueHealth aims to make information easier to maintain and use in everyday healthcare workflows.</p>
-        </>
+            <p>TrueHealth is a comprehensive, cloud-based infrastructural system designed to modernize 
+                healthcare management for individuals and institutions. It replaces traditional paper records
+                with a secure, 24/7 accessible digital system that efficiently manages patient biodata, 
+                treatment histories, and enables seamless appointment booking. Additionally, it provides 
+                streamlined communication channels with insurance providers, 
+                and enables all medical personnel and institutions using TrueHealth to message each other directly.</p>
+        </>,
+    action: () => { window.open("https://truehealth.works", "_blank", "noopener,noreferrer") }
 }
 
 export const supernovaSportsProps: ServiceProps = {

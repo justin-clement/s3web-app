@@ -9,7 +9,7 @@
     gap: 20px;
     box-sizing: border-box;
     padding: 18px 24px;
-    background: var(--brand-gradient);
+    background: url("../../assets/images/footer_bg.png") center / cover no-repeat;
 }
 
 .footerLinks {
@@ -20,6 +20,12 @@
 .footerLinks p {
     margin: 0;
     cursor: pointer;
+}
+
+.copyright {
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 @media (max-width: 640px) {

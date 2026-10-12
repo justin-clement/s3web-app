@@ -1,7 +1,7 @@
 .homePage {
 	--home-ink: #303632;
 	--home-muted: #606862;
-	--home-green: #267456;
+	--home-green: #135029;
 	--home-gold: var(--primary-color);
 }
 
@@ -80,6 +80,10 @@
 	line-height: 1.2;
 }
 
+.sectionCopy h2, .highlightCopy h2 {
+	color: var(--home-green);
+}
+
 .sectionCopy > p,
 .highlightCopy > p:not(.sectionLabel),
 .moreCopy > p:not(.sectionLabel) {
@@ -101,16 +105,16 @@
 	border-radius: 4px;
 	font-size: 0.95rem;
 	font-weight: 600;
-	transition: background-color 0.2s ease, border-color 0.2s ease;
+	transition: filter 0.2s ease, border-color 0.2s ease;
 }
 
 .primaryButton {
-	background: var(--home-green);
+	background: url("../../assets/images/red_yellow_bg.jpg") center / cover;
 	color: #fff;
 }
 
 .primaryButton:hover {
-	background: #1d6046;
+	filter: brightness(0.9);
 }
 
 .primaryButton:focus-visible,
@@ -121,7 +125,7 @@
 
 .highlightedServiceSection {
 	padding: 76px 24px;
-	background: #eef1eb;
+	background: #ffe9ef;
 }
 
 .highlightInner {
@@ -152,7 +156,7 @@
 
 .moreOnUs {
 	padding: 76px 24px 84px;
-	background: #263f34;
+	background: var(--home-green);
 	color: #fff;
 }
 

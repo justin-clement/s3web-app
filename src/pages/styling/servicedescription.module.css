@@ -112,11 +112,10 @@
     min-height: 44px;
     padding: 10px 18px;
     border-radius: 4px;
-    background: #e5e8e4;
-    color: #737b74;
+    background: url("../../assets/images/red_yellow_bg.jpg");
+    color: white;
     font-size: 0.95rem;
     font-weight: 600;
-    cursor: not-allowed;
 }
 
 .notFound {

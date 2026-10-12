@@ -11,6 +11,7 @@ const sectionRevealVariants: Variants = {
 };
 
 function Home() {
+
     const navigate = useNavigate();
 
     return (
@@ -42,8 +43,8 @@ function Home() {
                     <p className={styles.sectionLabel}>01 / INTRODUCTION</p>
                     <div className={styles.sectionCopy}>
                         <h2>Precise Technology.</h2>
-                        <p>S3 is a provider of digital services and software solutions for making many human activities 
-                            easier, more effective or more interesting to handle. 
+                        <p>S3 is a provider of digital services and software solutions for making human living 
+                            easier, more effective or more interesting. 
                             We believe digital technology should make life better and work more effectively, so we bring 
                             intention, human consideration and a high standard of engineering to everything we create.</p>
                         <button className={styles.primaryButton} onClick={() => navigate("/services")}>
@@ -64,9 +65,10 @@ function Home() {
                     <div className={styles.highlightCopy}>
                         <p className={styles.sectionLabel}>02 / FEATURED SERVICE</p>
                         <h2>Healthcare data, running on powerful infrastructure.</h2>
-                        <p>TrueHealth is a healthcare data management system built for hospitals, individuals, 
-                            and HMOs. It's designed to make health information easier to organize and manage across 
-                            the people and institutions that depend on it.</p>
+                        <p>TrueHealth is a modern healthcare data management system bringing hospitals, individuals, 
+                            and HMOs into one deeply connected network. With its suite of useful features and awesome data engineering, 
+                            health data can now do so much more for the people and institutions that depend on it.</p>
+                            
                         <button className={styles.primaryButton} onClick={() => navigate(`/services/${trueHealthProps.nameAsString}`)}>
                             Explore TrueHealth <IoArrowForward aria-hidden="true" />
                         </button>
