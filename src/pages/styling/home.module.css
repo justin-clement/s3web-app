@@ -7,7 +7,8 @@
 
 .landingSection {
 	display: flex;
-	min-height: min(760px, 84svh);
+	min-height: 100vh;
+	min-height: 100svh;
 	align-items: center;
 	box-sizing: border-box;
 	padding: 100px 8vw 72px;
@@ -184,8 +185,6 @@
 
 @media (max-width: 720px) {
 	.landingSection {
-		min-height: 620px;
-		min-height: min(720px, 84svh);
 		padding: 110px 24px 64px;
 		background-position: 58% center;
 	}
