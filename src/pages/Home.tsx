@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { motion, type Variants } from "framer-motion";
 import { IoArrowForward } from "react-icons/io5";
 import { trueHealthProps } from "../appData/appData";
-import landscape from "../assets/images/IMG_5087.jpeg";
 import styles from "./styling/home.module.css";
 
 const sectionRevealVariants: Variants = {
@@ -13,12 +12,13 @@ const sectionRevealVariants: Variants = {
 function Home() {
 
     const navigate = useNavigate();
+    const imageUrl = 'https://res.cloudinary.com/w3s14ry4/image/upload/f_auto,q_auto/IMG_5087_dz5y93.jpg'
 
     return (
         <div className={styles.homePage}>
             <motion.section
                 className={styles.landingSection}
-                style={{ backgroundImage: `linear-gradient(90deg, rgb(14 31 27 / 74%) 0%, rgb(14 31 27 / 34%) 55%, rgb(14 31 27 / 8%) 100%), linear-gradient(0deg, rgb(12 24 21 / 35%), transparent 45%), url("${landscape}")` }}
+                style={{ backgroundImage: `linear-gradient(90deg, rgb(14 31 27 / 74%) 0%, rgb(14 31 27 / 34%) 55%, rgb(14 31 27 / 8%) 100%), linear-gradient(0deg, rgb(12 24 21 / 35%), transparent 45%), url("${imageUrl}")` }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
