@@ -1,7 +1,7 @@
 .pageContainer {
-    max-width: 1160px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 16px 24px 64px;
+    padding: 24px 24px 64px;
     color: #303632;
 }
 
@@ -9,21 +9,22 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e4e6e1;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e7e5dc;
 }
 
 .eyebrow {
     margin: 0 0 8px;
-    color: var(--primary-color);
+    color: #8a6c32;
     font-size: 0.8rem;
     font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 .pageHeader h1 {
     margin: 0;
-    color: #135029;
+    color: #24543b;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -39,7 +40,7 @@
 .servicesSection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: 18px;
+    gap: 20px;
 }
 
 @media (max-width: 720px) {

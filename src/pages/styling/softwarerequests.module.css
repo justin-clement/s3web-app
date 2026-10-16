@@ -59,14 +59,14 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    color: #135029;
+    color: #454945;
     font-size: 0.95rem;
     font-weight: 600;
 }
 
 .requestForm label span {
     display: inline;
-    color: #135029;
+    color: #656a65;
     font-weight: 400;
 }
 

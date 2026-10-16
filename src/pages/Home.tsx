@@ -24,12 +24,14 @@ function Home() {
                 transition={{ duration: 0.6 }}
             >
                 <div className={styles.heroContent}>
+                    {/* <p className={styles.heroEyebrow}>GOOD PEOPLE. POWERFUL SOFTWARE.</p> */}
                     <motion.h1 
                     initial={{ y: 20 }} 
                     animate={{ y: 0 }} 
-                    transition={{ duration: 0.6 }}>Modern software built for the future.</motion.h1>
-                    <p className={styles.heroCopy}>We specialize in the design of useful, powerful systems for better ways to live and work.</p>
+                    transition={{ duration: 0.6 }}>Great software starts with people.</motion.h1>
+                    <p className={styles.heroCopy}>Building useful, powerful tools and services for the betterment of human lives.</p>
                 </div>
+                
             </motion.section>
 
             <motion.section
@@ -40,13 +42,13 @@ function Home() {
                 viewport={{ once: true, amount: 0.2 }}
             >
                 <div className={styles.sectionInner}>
-                    <p className={styles.sectionLabel}>01 / INTRODUCTION</p>
+                    <p className={styles.sectionLabel}>01 / HI THERE!</p>
                     <div className={styles.sectionCopy}>
-                        <h2>Precise Technology.</h2>
-                        <p>S3 is a provider of digital services and software solutions for making human living 
-                            easier, more effective or more interesting. 
-                            We believe digital technology should make life better and work more effectively, so we bring 
-                            intention, human consideration and a high standard of engineering to everything we create.</p>
+                        <h2>Thoughtful by design. Powerful by nature.</h2>
+                        <p>S3 is a provider of software and digital services that make everyday life and work easier, 
+                            more effective, and more interesting. We believe digital technology should make life 
+                            better and work more effectively, so we bring intention, human consideration and a high 
+                            standard of engineering to everything we create.</p>
                         <button className={styles.primaryButton} onClick={() => navigate("/services")}>
                             View our services <IoArrowForward aria-hidden="true" />
                         </button>
@@ -65,9 +67,7 @@ function Home() {
                     <div className={styles.highlightCopy}>
                         <p className={styles.sectionLabel}>02 / FEATURED SERVICE</p>
                         <h2>Healthcare data, running on powerful infrastructure.</h2>
-                        <p>TrueHealth is a modern healthcare data management system bringing hospitals, individuals, 
-                            and HMOs into one deeply connected network. With its suite of useful features and awesome data engineering, 
-                            health data can now do so much more for the people and institutions that depend on it.</p>
+                        <p>TrueHealth is a modern healthcare data management system connecting hospitals, individuals, and HMOs. Thoughtful features and powerful data engineering help the people and institutions who depend on health data put it to better use.</p>
                             
                         <button className={styles.primaryButton} onClick={() => navigate(`/services/${trueHealthProps.nameAsString}`)}>
                             Explore TrueHealth <IoArrowForward aria-hidden="true" />
@@ -89,11 +89,8 @@ function Home() {
                 <div className={styles.moreInner}>
                     <p className={styles.sectionLabel}>03 / ABOUT S3</p>
                     <div className={styles.moreCopy}>
-                        <h2>Professional Design and Execution.</h2>
-                        <p>Our tools and services are made for individuals, organizations, and governments. 
-                            If it's built by S3, then it works and works well, highly adaptible to various 
-                            conditions.
-                        </p>
+                        <h2>Professional execution and design.</h2>
+                        <p>We work with individuals, organizations, and governments to turn real needs into reliable software. Bring us your idea or challenge—we’ll listen, think it through with you, and build something made to work in the real world.</p>
                         <button className={styles.secondaryButton} onClick={() => navigate("/about")}>
                             More about us <IoArrowForward aria-hidden="true" />
                         </button>

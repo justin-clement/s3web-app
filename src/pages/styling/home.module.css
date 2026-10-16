@@ -1,7 +1,7 @@
 .homePage {
 	--home-ink: #303632;
 	--home-muted: #606862;
-	--home-green: #135029;
+	--home-green: #24543b;
 	--home-gold: var(--primary-color);
 }
 
@@ -31,15 +31,17 @@
 }
 
 .heroEyebrow {
-	color: var(--home-gold);
+	margin-bottom: 18px;
+	color: #f3d58b;
+	letter-spacing: 0.12em;
 }
 
 .heroContent h1 {
 	max-width: 680px;
 	margin: 0 auto;
-	font-size: 4.5rem;
+	font-size: clamp(3rem, 6vw, 4.5rem);
 	font-weight: 600;
-	line-height: 1.02;
+	line-height: 1.08;
 }
 
 .heroCopy {
@@ -67,7 +69,8 @@
 }
 
 .sectionLabel {
-	color: #8a6416;
+	color: #8a6c32;
+	letter-spacing: 0.06em;
 }
 
 .sectionCopy h2,
@@ -125,7 +128,7 @@
 
 .highlightedServiceSection {
 	padding: 76px 24px;
-	background: #ffe9ef;
+	background: #f8f1e9;
 }
 
 .highlightInner {
@@ -156,7 +159,7 @@
 
 .moreOnUs {
 	padding: 76px 24px 84px;
-	background: var(--home-green);
+	background: #294d3a;
 	color: #fff;
 }
 

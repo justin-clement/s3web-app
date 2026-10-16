@@ -99,7 +99,7 @@ function AboutS3() {
                     <p>The shortest path between an idea and execution is often the simplest one. 
                         Why make something complicated when the same result can be achieved more simply? At S3, 
                         ease of use is a priority in everything we design. When building software, our first goal 
-                        is effectiveness: let it work. Then, make that working solution easy to get a hang of. We deliberately 
+                        is effectiveness: let it work. Then make that working solution easy to get a hang of. We deliberately 
                         look for the simplest way to give people access to the results they need, without adding 
                         more than is necessary.
                     </p>
@@ -112,7 +112,7 @@ function AboutS3() {
                     <ScalabilityIcon size={40} />
                     <h2>Scalability & Security.</h2>
                     <p>Our services are built for real-world use. They are designed to support multiple users, 
-                        handle heavy workloads, and remain reliable as demand grows. Whether a service is being 
+                        handle real-time workloads, and remain reliable as demand grows. Whether a service is being 
                         used by a few people or many at once, we build with performance, scalability, and security in mind. 
                         We set up secure infrastructure to handle the movement of data, and follow 
                         industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside.</p>
