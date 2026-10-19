@@ -28,8 +28,8 @@ function Home() {
                     <motion.h1 
                     initial={{ y: 20 }} 
                     animate={{ y: 0 }} 
-                    transition={{ duration: 0.6 }}>Great software starts with people.</motion.h1>
-                    <p className={styles.heroCopy}>Building useful, powerful tools and services for the betterment of human lives.</p>
+                    transition={{ duration: 0.6 }}>Modern tech. Made for you.</motion.h1>
+                    <p className={styles.heroCopy}>We build software that fits into human lives, not ones that demand you read a 40-page manual first.</p>
                 </div>
                 
             </motion.section>
@@ -46,9 +46,12 @@ function Home() {
                     <div className={styles.sectionCopy}>
                         <h2>Thoughtful by design. Powerful by nature.</h2>
                         <p>S3 is a provider of software and digital services that make everyday life and work easier, 
-                            more effective, and more interesting. We believe digital technology should make life 
-                            better and work more effectively, so we bring intention, human consideration and a high 
-                            standard of engineering to everything we create.</p>
+                            more effective, and more interesting. Good software is measured by how much easier it makes 
+                            someone's life, not by all the things hiding in its menus. If a feature needs a 12-step explanation 
+                            to understand it, it probably wasn't built by us. 
+                            We believe digital technology should make life
+                            better, so we bring intention, human consideration and a high 
+                            standard of engineering to everything we create. We know how to build the good stuff.</p>
                         <button className={styles.primaryButton} onClick={() => navigate("/services")}>
                             View our services <IoArrowForward aria-hidden="true" />
                         </button>

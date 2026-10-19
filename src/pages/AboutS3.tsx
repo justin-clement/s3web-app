@@ -40,7 +40,7 @@ function AboutS3() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 0.3 }}
-                className={styles.pageTitle}>Modern Software Built With Intention</motion.h1>
+                className={styles.pageTitle}>Software Made With Intention</motion.h1>
             </div>
             
 
@@ -64,12 +64,15 @@ function AboutS3() {
                     <div className="iconDiv"><SolutionsIcon size={40} /></div>
                     
                     <h2>Solution-oriented.</h2>
-                    <p>Most of our services address specific problems. 
+                    <p>When people say "I wish there was an app for that," we quietly start building. 
                         One of our favourite ways to build is by first identifying real issues in a particular 
                         field, then developing an effective fix for it, making many of our services solutions-based 
-                        by default. S3 is a problem-solving enterprise, 
-                        and our products reflect this approach. We focus on what needs to be solved, 
-                        then build what is needed to solve it.
+                        by default. We don't introduce features just for the sake of it; we add them because someone, 
+                        somewhere, was doing it the hard way. S3 is a problem-solving enterprise, 
+                        and our software offerings reflect this approach. We focus on what needs to be solved, 
+                        then build what is needed to solve it. Success is measured by how many problems quietly 
+                        disappear, not by how many features are added. Helping work and life means giving people their 
+                        time back, one solution at a time.
                     </p>
                 </motion.div>
 
@@ -80,12 +83,15 @@ function AboutS3() {
                     <div className="iconDiv"><InnovateIcon size={40} /></div>
                     
                     <h2>Innovation & Intelligence.</h2>
-                    <p>We aren't afraid to try new things. Creating something new comes with uncertainty. 
+                    <p>We aren't afraid to try new things. Real innovation makes the hard things simple, not the 
+                        simple things "AI-powered." Creating something new comes with uncertainty. 
                         You cannot always know how a product or service will be received, how widely it will be 
                         adopted, or how well it will perform in the real world. But when we believe in an 
                         idea, we stay with it. We refine, test it, and keep working until it's 
                         come to life. We believe good and innovative products should ultimately speak 
-                        for themselves, and we are always looking to build more ways to achieve things smartly.
+                        for themselves, and we are always looking to build more ways to achieve things smartly. 
+                        Innovation means asking "why do we still do it this way?" and being brave enough to hear 
+                        "no good reason."
                     </p>
                 </motion.div>
 
@@ -96,12 +102,13 @@ function AboutS3() {
                     <div className="iconDiv"><SimpleIcon size={40} /></div>
                     
                     <h2>Ease of Use.</h2>
-                    <p>The shortest path between an idea and execution is often the simplest one. 
-                        Why make something complicated when the same result can be achieved more simply? At S3, 
+                    <p>The shortest path between an idea and execution is often the simplest one. Easy software 
+                        is a quiet kindness, like a door that opens itself when your hands are full.
+                        Modern technology exists to make life simpler, not more complicated. With S3, 
                         ease of use is a priority in everything we design. When building software, our first goal 
-                        is effectiveness: let it work. Then make that working solution easy to get a hang of. We deliberately 
-                        look for the simplest way to give people access to the results they need, without adding 
-                        more than is necessary.
+                        is effectiveness: let it work. Then make that working solution easy to use. If a problem takes 
+                        ten steps to solve, our job is to make it one, and make that one obvious. Good solutions don't need 
+                        a manual, a webinar or a team of consultants to explain them.
                     </p>
                 </motion.div>
 
@@ -114,8 +121,11 @@ function AboutS3() {
                     <p>Our services are built for real-world use. They are designed to support multiple users, 
                         handle real-time workloads, and remain reliable as demand grows. Whether a service is being 
                         used by a few people or many at once, we build with performance, scalability, and security in mind. 
-                        We set up secure infrastructure to handle the movement of data, and follow 
-                        industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside.</p>
+                        Good architecture is planning for success, so that when your app goes viral, you get celebration 
+                        instead of a server fire. Yet scaling without security is just building a bigger target with 
+                        nicer lighting. We set up secure infrastructure to handle the movement of data, and follow 
+                        industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside. 
+                        Scalable software grows from ten users to ten million without sending an apology email.</p>
                 </motion.div>
 
             </motion.div>

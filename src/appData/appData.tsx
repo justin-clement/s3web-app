@@ -1,5 +1,6 @@
 import type { ReactNode } from "react"
-import trueHealthLogo from "../assets/images/truehealth_logo.png";
+import trueHealthLogo from "../assets/images/truehealth_logo_tp.png";
+import supernovaSportsLogo from "../assets/images/supernova-sports-favicon.svg";
 
 export type ServiceProps = {
     name: string | ReactNode
@@ -8,6 +9,10 @@ export type ServiceProps = {
     description: string | ReactNode 
     action?: () => void   
 }
+
+const openExternalLink = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+};
 
 // ALL SERVICES AND DESCRIPTIONS.
 export const trueHealthProps: ServiceProps = {
@@ -21,19 +26,24 @@ export const trueHealthProps: ServiceProps = {
                 with a secure, 24/7 accessible digital system that efficiently manages patient biodata, 
                 treatment histories, and enables seamless appointment booking. Additionally, it provides 
                 streamlined communication channels with insurance providers, 
-                and enables all medical personnel and institutions using TrueHealth to message each other directly.</p>
+                and enables all medical personnel and institutions using TrueHealth to message each other directly.
+            </p>
         </>,
-    action: () => { window.open("https://truehealth.works", "_blank", "noopener,noreferrer") }
+    action: openExternalLink.bind(null, "https://truehealth.works")
 }
 
 export const supernovaSportsProps: ServiceProps = {
-    name: <p>Supernova Sports</p>, 
+    name: <img src={supernovaSportsLogo} alt="Supernova Sports" />, 
     nameAsString: "Supernova Sports",
-    summary: "A data and logic engine for predicting the outcomes of football matches.", 
+    summary: "Supernova Sports is a digital service specializing in predicting the outcomes of football matches.", 
     description: 
         <>
-            <p>Supernova Sports uses match data and analytical logic to predict possible football outcomes. It turns information about the game into insights for people who follow football.</p>
-        </>
+            <p>Supernova Sports is an analytics service that uses carefully refined, transformed data and custom algorithms to predict 
+                possible outcomes of football matches. With an accuracy exceeding 74% in live use, it's one of the most 
+                accurate predictive tools in the market. It currently offers two subscription tiers.
+            </p>
+        </>,
+    action: openExternalLink.bind(null, "https://supernova-sports.web.app")
 }
 
 export const finserProps: ServiceProps = {
@@ -42,7 +52,8 @@ export const finserProps: ServiceProps = {
     summary: "Finser helps you find services in Nigeria.", 
     description: 
         <>
-            <p>Finser helps people find services in Nigeria. Its focus is making it easier to discover providers and services relevant to what someone needs.</p>
+            <p>Finser helps people find services in Nigeria. 
+                Its focus is making it easier to discover providers and services relevant to what someone needs.</p>
         </>
 }
 
@@ -52,7 +63,9 @@ export const leavesProps: ServiceProps = {
     summary: "A hybrid-anonymous text-based social network built to foster deeper connection.", 
     description: 
         <>
-            <p>Leaves is a text-based social network that combines anonymous and identified participation. It is designed to create room for more thoughtful conversations and deeper connection.</p>
+            <p>Leaves is a text-based social network that combines anonymous and 
+                identified participation. It is designed to create room for more thoughtful 
+                conversations and deeper connection.</p>
         </>
 }
 
