@@ -64,15 +64,16 @@ function AboutS3() {
                     <div className="iconDiv"><SolutionsIcon size={40} /></div>
                     
                     <h2>Solution-oriented.</h2>
-                    <p>When people say "I wish there was an app for that," we quietly start building. 
+                    <p> 
                         One of our favourite ways to build is by first identifying real issues in a particular 
                         field, then developing an effective fix for it, making many of our services solutions-based 
-                        by default. We don't introduce features just for the sake of it; we add them because someone, 
-                        somewhere, was doing it the hard way. S3 is a problem-solving enterprise, 
+                        by default. We don't build or introduce features just for the sake of it; we add them because someone 
+                        somewhere has been doing it the hard way. S3 is a problem-solving enterprise, 
                         and our software offerings reflect this approach. We focus on what needs to be solved, 
                         then build what is needed to solve it. Success is measured by how many problems quietly 
-                        disappear, not by how many features are added. Helping work and life means giving people their 
-                        time back, one solution at a time.
+                        disappear, not by how many features are added. For us, helping the work and lives of people means 
+                        giving you your time back, one solution at a time.
+                        
                     </p>
                 </motion.div>
 
@@ -125,7 +126,8 @@ function AboutS3() {
                         instead of a server fire. Yet scaling without security is just building a bigger target with 
                         nicer lighting. We set up secure infrastructure to handle the movement of data, and follow 
                         industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside. 
-                        Scalable software grows from ten users to ten million without sending an apology email.</p>
+                        Scalable software grows from ten users to ten million without needing to send an apology email 
+                        for the app crashing.</p>
                 </motion.div>
 
             </motion.div>

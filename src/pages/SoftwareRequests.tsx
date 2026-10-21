@@ -80,8 +80,8 @@ function SoftwareRequests() {
             <div className={styles.contentContainer}>
                 <div className={styles.requestArea}>
                     <div className={styles.requestIntro}>
-                        <p>Tell us what you need, who it is for, and what it should do. We take on requests ranging 
-                            from portfolio websites and custom web applications to internal tools and cloud-based backend 
+                        <p>Tell us what you need, who it's for, and what it should do. We take on requests ranging 
+                            from portfolio websites and custom web applications to internal business tools and cloud-based backend 
                             services.</p>
                         <p>After reviewing your request, we’ll get back to you with an assessment of feasibility, likely cost and timeline, and our recommended approach.</p>
                         <p>We currently focus on web and desktop software rather than native mobile apps.</p>
@@ -92,12 +92,12 @@ function SoftwareRequests() {
                         <label>What kind of service do you need?
                             <select name="service_type" value={requestForm.service_type} onChange={handleChange}>
                                 <option value="">Select a service type</option>
-                                <option value="Web App">Web Application or Website</option>
+                                <option value="Web App">Website / Web Application</option>
                                 <option value="Backend">Backend Design</option>
                                 <option value="Frontend">Frontend Design</option>
-                                <option value="Desktop App">Desktop Application</option>
+                                <option value="Desktop App">Desktop App</option>
                                 <option value="Cloud">Cloud Services</option>
-                                <option value="Hosting">Hosting</option>
+                                <option value="Hosting">Hosting & Domain Management</option>
                                 <option value="Other">Other</option>
                             </select>
                         </label>
@@ -108,7 +108,7 @@ function SoftwareRequests() {
                             name="requirements" 
                             value={requestForm.requirements} 
                             onChange={handleChange}
-                            placeholder="Describe what you want, any problem(s) this is to solve, who will use the software, what features you need."
+                            placeholder="Describe what you want, any problem(s) this is to solve, who will use the software, what features you need. Feel free to include any other information that will help us better understand your request."
                             ></textarea>
                         </label>
 

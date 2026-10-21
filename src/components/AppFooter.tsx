@@ -16,7 +16,7 @@ function AppFooter(){
             <div className={styles.footerLinks}>
                 <p onClick={openAbout}>About S3</p>
                 <p onClick={openServices}>Solutions & Services</p>
-                <p onClick={openRequests}>Software Request</p>
+                <p onClick={openRequests}>Request Software</p>
                 <p onClick={openContact}>Get in Touch</p>
             </div>
             
