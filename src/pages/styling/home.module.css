@@ -97,6 +97,76 @@
 	line-height: 1.7;
 }
 
+.whatWeDoSection {
+	padding: 76px 24px 84px;
+	background: #f8f1e9;
+}
+
+.whatWeDoInner {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.whatWeDoHeading {
+	margin: 0 0 32px;
+	color: var(--home-green);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.serviceCards {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 18px;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.serviceCards::-webkit-scrollbar {
+	display: none;
+}
+
+.serviceCard {
+	box-sizing: border-box;
+	min-height: 260px;
+	padding: 24px 20px;
+	border: 1px solid #e8dfd3;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 8px 24px rgb(48 54 50 / 5%);
+}
+
+.serviceIcon {
+	display: grid;
+	width: 44px;
+	height: 44px;
+	place-items: center;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	background: #edf3ee;
+	color: var(--home-green);
+	font-size: 1.4rem;
+}
+
+.serviceCard h3 {
+	margin: 0 0 14px;
+	color: var(--home-ink);
+	font-size: 1.12rem;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.serviceCard ul {
+	display: grid;
+	gap: 9px;
+	margin: 0;
+	padding-left: 19px;
+	color: var(--home-muted);
+	font-size: 0.92rem;
+	line-height: 1.45;
+}
+
 .primaryButton,
 .secondaryButton {
 	display: inline-flex;
@@ -128,7 +198,7 @@
 
 .highlightedServiceSection {
 	padding: 76px 24px;
-	background: #f8f1e9;
+	background: #fff;
 }
 
 .highlightInner {
@@ -205,9 +275,32 @@
 	}
 
 	.midSection,
+	.whatWeDoSection,
 	.highlightedServiceSection,
 	.moreOnUs {
 		padding: 52px 22px 58px;
+	}
+
+	.whatWeDoHeading {
+		margin-bottom: 24px;
+		font-size: 1.7rem;
+	}
+
+	.serviceCards {
+		grid-auto-columns: minmax(260px, 80%);
+		grid-auto-flow: column;
+		grid-template-columns: none;
+		overflow-x: auto;
+		padding: 0 0 12px;
+		scroll-padding-inline: 1px;
+		scroll-snap-type: x mandatory;
+		overscroll-behavior-inline: contain;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.serviceCard {
+		min-height: 250px;
+		scroll-snap-align: start;
 	}
 
 	.sectionInner,
@@ -232,5 +325,22 @@
 
 	.highlightVisual {
 		min-height: 190px;
+	}
+}
+
+@media (min-width: 721px) and (max-width: 900px) {
+	.serviceCards {
+		grid-auto-columns: minmax(250px, 38%);
+		grid-auto-flow: column;
+		grid-template-columns: none;
+		overflow-x: auto;
+		padding-bottom: 12px;
+		scroll-snap-type: x mandatory;
+		overscroll-behavior-inline: contain;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.serviceCard {
+		scroll-snap-align: start;
 	}
 }

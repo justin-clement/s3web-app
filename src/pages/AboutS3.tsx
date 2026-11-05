@@ -61,10 +61,12 @@ function AboutS3() {
                     className={styles.solutionsDiv}
                     variants={attributeCardVariants}
                 >
-                    <div className="iconDiv"><SolutionsIcon size={40} /></div>
-                    
-                    <h2>Solution-oriented.</h2>
-                    <p> 
+                    <div className={styles.attributeHeader}>
+                        <div className="iconDiv"><SolutionsIcon size={40} /></div>
+                        <h2>Solution-oriented.</h2>
+                    </div>
+                    <div className={styles.attributeBody}>
+                        <p>
                         One of our favourite ways to build is by first identifying real issues in a particular 
                         field, then developing an effective fix for it, making many of our services solutions-based 
                         by default. We don't build or introduce features just for the sake of it; we add them because someone 
@@ -73,53 +75,62 @@ function AboutS3() {
                         then build what is needed to solve it. Success is measured by how many problems quietly 
                         disappear, not by how many features are added. For us, helping the work and lives of people means 
                         giving you your time back, one solution at a time.
-                        
-                    </p>
+                        </p>
+                    </div>
                 </motion.div>
 
                 <motion.div
                     className={styles.innovateDiv}
                     variants={attributeCardVariants}
                 >
-                    <div className="iconDiv"><InnovateIcon size={40} /></div>
-                    
-                    <h2>Innovation & Intelligence.</h2>
-                    <p>We aren't afraid to try new things. Real innovation makes the hard things simple, not the 
+                    <div className={styles.attributeHeader}>
+                        <div className="iconDiv"><InnovateIcon size={40} /></div>
+                        <h2>Innovation & Intelligence.</h2>
+                    </div>
+                    <div className={styles.attributeBody}>
+                        <p>We aren't afraid to try new things. Real innovation makes the hard things simple, not the
                         simple things "AI-powered." Creating something new comes with uncertainty. 
                         You cannot always know how a product or service will be received, how widely it will be 
                         adopted, or how well it will perform in the real world. But when we believe in an 
-                        idea, we stay with it. We refine, test it, and keep working until it's 
+                        idea, we stay with it. We refine, test it, and keep at it until it's 
                         come to life. We believe good and innovative products should ultimately speak 
                         for themselves, and we are always looking to build more ways to achieve things smartly. 
                         Innovation means asking "why do we still do it this way?" and being brave enough to hear 
                         "no good reason."
-                    </p>
+                        </p>
+                    </div>
                 </motion.div>
 
                 <motion.div
                     className={styles.simpleDiv}
                     variants={attributeCardVariants}
                 >
-                    <div className="iconDiv"><SimpleIcon size={40} /></div>
-                    
-                    <h2>Ease of Use.</h2>
-                    <p>The shortest path between an idea and execution is often the simplest one. Easy software 
+                    <div className={styles.attributeHeader}>
+                        <div className="iconDiv"><SimpleIcon size={40} /></div>
+                        <h2>Ease of Use.</h2>
+                    </div>
+                    <div className={styles.attributeBody}>
+                        <p>The shortest path between an idea and execution is often the simplest one. Easy software
                         is a quiet kindness, like a door that opens itself when your hands are full.
                         Modern technology exists to make life simpler, not more complicated. With S3, 
                         ease of use is a priority in everything we design. When building software, our first goal 
                         is effectiveness: let it work. Then make that working solution easy to use. If a problem takes 
                         ten steps to solve, our job is to make it one, and make that one obvious. Good solutions don't need 
                         a manual, a webinar or a team of consultants to explain them.
-                    </p>
+                        </p>
+                    </div>
                 </motion.div>
 
                 <motion.div
                     className={styles.scalableDiv}
                     variants={attributeCardVariants}
                 >
-                    <ScalabilityIcon size={40} />
-                    <h2>Scalability & Security.</h2>
-                    <p>Our services are built for real-world use. They are designed to support multiple users, 
+                    <div className={styles.attributeHeader}>
+                        <div className="iconDiv"><ScalabilityIcon size={40} /></div>
+                        <h2>Scalability & Security.</h2>
+                    </div>
+                    <div className={styles.attributeBody}>
+                        <p>Our services are built for real-world use. They are designed to support multiple users,
                         handle real-time workloads, and remain reliable as demand grows. Whether a service is being 
                         used by a few people or many at once, we build with performance, scalability, and security in mind. 
                         Good architecture is planning for success, so that when your app goes viral, you get celebration 
@@ -128,6 +139,7 @@ function AboutS3() {
                         industry best practices to ensure our offerings are elegant on the outside yet rugged on the inside. 
                         Scalable software grows from ten users to ten million without needing to send an apology email 
                         for the app crashing.</p>
+                    </div>
                 </motion.div>
 
             </motion.div>
