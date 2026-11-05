@@ -81,7 +81,7 @@ function SoftwareRequests() {
                 <div className={styles.requestArea}>
                     <div className={styles.requestIntro}>
                         <p>Tell us what you need, who it's for, and what it should do. We take on requests ranging 
-                            from portfolio websites and custom web applications to internal business tools and cloud-based backend 
+                            from personal or business websites to custom web applications, internal business tools or cloud-based backend 
                             services.</p>
                         <p>After reviewing your request, we’ll get back to you with an assessment of feasibility, likely cost and timeline, and our recommended approach.</p>
                         <p>We currently focus on web and desktop software rather than native mobile apps.</p>

@@ -71,7 +71,7 @@ function Home() {
                     <motion.h1 
                     initial={{ y: 20 }} 
                     animate={{ y: 0 }} 
-                    transition={{ duration: 0.6 }}>Modern technology. Made for you.</motion.h1>
+                    transition={{ duration: 0.6 }}>Modern software, made for you.</motion.h1>
                     {/* <p className={styles.heroCopy}>We build software for human lives.</p> */}
                 </div>
                 
